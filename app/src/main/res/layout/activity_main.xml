@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="android.projects.miniwebwithfragment.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/fragment_area"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wissen"
+                android:layout_weight="1"
+                android:id="@+id/button1"
+                android:onClick="doOp"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OSYM"
+                android:layout_weight="1"
+                android:id="@+id/button2"
+                android:onClick="doOp"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IETT"
+                android:layout_weight="1"
+                android:onClick="doOp"
+                android:id="@+id/button3"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ISKUR"
+                android:layout_weight="1"
+                android:onClick="doOp"
+                android:id="@+id/button4"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MARMARAY"
+                android:layout_weight="1"
+                android:id="@+id/button5"
+                android:onClick="doOp"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
